@@ -1,0 +1,31 @@
+{
+  "name": "yesmart-v4-server",
+  "version": "1.0.0",
+  "description": "yesmart-v4 is 4th repition of YesMart",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "subhan kashif",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^6.1.1",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "json-response-sender": "^1.0.1",
+    "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
