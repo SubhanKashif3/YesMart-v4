@@ -10,6 +10,8 @@ export interface IUser extends Document{
     email? : string;
     password : string;
     refreshToken : string;
+    generateAccessToken : () => string;
+    generateRefreshToken : () => string;
 };
 
 const userSchema = new Schema<IUser>({
@@ -89,4 +91,4 @@ userSchema.pre("save", async function (next) {
     next();
 });
 
-export default model<IUser>("User",userSchema);
+export const User =  model<IUser>("User",userSchema);
